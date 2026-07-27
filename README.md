@@ -1,182 +1,237 @@
-# Business Insights 360
+# 📊 Business Insights 360 | Power BI Dashboard
+![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-Database-blue)
+![Excel](https://img.shields.io/badge/Excel-Data-green)
+![DAX](https://img.shields.io/badge/DAX-Analytics-orange)
 
-## Project Overview
+An end-to-end **Business Intelligence Dashboard** built using **Power BI** to analyze Finance, Sales, Marketing, and Supply Chain performance for **AtliQ Hardware**. This project demonstrates data modeling, DAX, KPI analysis, interactive dashboard design, and business decision-making using real-world datasets.
 
-AtliQ Hardware is growing rapidly in the recent years, and they have decided to implement the data analytics using PowerBi in their company for the first time to surpass their competitors in the market and to make data driven decisions. This project is hoped to give answers to the questions of stakeholder in terms all the aspects like finance, sales, marketing and supply chain.
+---
 
-[Live Report Link](https://app.powerbi.com/view?r=eyJrIjoiMTQwNWVlNmUtZWY5ZC00Mjc4LWJhMzMtZWZkMzA3OTM0YTY3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=ReportSection0e765c0061580b067c73)
+# 📌 Project Overview
 
-## Tech stacks
+AtliQ Hardware is a rapidly growing company that wanted to leverage **Business Intelligence** to make data-driven decisions across multiple business domains. This dashboard consolidates data from Finance, Sales, Marketing, and Supply Chain into a single interactive reporting solution.
 
+The project focuses on transforming raw business data into meaningful insights through Power BI dashboards, enabling stakeholders to monitor KPIs, identify trends, and make strategic decisions.
+
+---
+
+# 🛠 Tech Stack
+
+- Microsoft Power BI
 - SQL
-- PowerBi Desktop
-- Excel
-- DAX language
-- DAX studio (for optimizing the report)
-- Project charter file
+- Microsoft Excel
+- Power Query
+- DAX (Data Analysis Expressions)
+- DAX Studio
+- Power BI Desktop
 
-## PowerBI techniques Learnt
+---
 
-- What are all the questions should be asked before staring the project
-- Creating calculated columns
-- creating measure using DAX language
-- Data modeling
-- Using Bookmarks to switch between two visuals
-- Page navigation with buttons
-- Using divide function to prevent zero division errors
-- creating date table using m language
-- Dynamic titles based on the applied filters
-- Using KPI indicators
-- Conditional formatting the values in visuals using icons or background color
-- Data validation techniques
-- PowerBi services
-- Publishing reports to PowerBi services
-- Setting up personal gateway to set up the auto refresh of data
-- PowerBi App creation
-- Collaboration, workspace, access permissions in PowerBi services
+# 📈 Key Features
 
+- Interactive Home Dashboard
+- Finance Performance Dashboard
+- Sales Analytics Dashboard
+- Marketing Performance Dashboard
+- Supply Chain Dashboard
+- Executive Overview
+- KPI Cards
+- Dynamic Filtering using Slicers
+- Drill-down Analysis
+- Bookmark Navigation
+- Interactive Buttons
+- Responsive Dashboard Design
+- Conditional Formatting
+- Interactive dashboard with multiple business views
 
-## Business related terms
+---
 
-- Gross price
-- Pre-invoice deductions
-- Post-Invoice deductions
-- Net Invoice sale
+# 📊 Dashboard Pages
+
+### 🏠 Home Dashboard
+
+The landing page provides navigation to all dashboards using interactive buttons.
+
+<img src="Resources/Home.png" width="100%">
+
+---
+
+### 💰 Finance Dashboard
+
+Monitor revenue, gross margin, net profit, and other financial KPIs.
+
+<img src="Resources/Finance View.png" width="100%">
+
+---
+
+### 📈 Sales Dashboard
+
+Analyze customer performance, product sales, regional sales, and revenue trends.
+
+<img src="Resources/Sales View.png" width="100%">
+
+---
+
+### 📣 Marketing Dashboard
+
+Track marketing effectiveness, profitability, customer segments, and business performance.
+
+<img src="Resources/Marketing View.png" width="100%">
+
+---
+
+### 🚚 Supply Chain Dashboard
+
+Monitor forecast accuracy, inventory trends, and supply chain performance.
+
+<img src="Resources/Supply Chain View.png" width="100%">
+
+---
+
+# 🗂 Data Model
+
+The dashboard follows the **Snowflake Schema**, enabling efficient relationships and optimized report performance.
+
+<img src="Resources/Data_model.png" width="100%">
+
+---
+
+# 📂 Dataset Overview
+
+The project utilizes multiple **Fact** and **Dimension** tables.
+
+### Dimension Tables
+
+- Customer
+- Product
+- Market
+
+### Fact Tables
+
+- Sales
+- Forecast
+- Manufacturing Cost
+- Freight Cost
+- Gross Price
+- Pre Invoice Deductions
+- Post Invoice Deductions
+
+The data is imported from SQL databases and transformed using **Power Query** before building the dashboard.
+
+---
+
+# 📌 Business Metrics
+
+The dashboard analyzes several important business KPIs, including:
+
+- Net Sales
+- Gross Sales
 - Gross Margin
-- Net sales
-- Net profit
-- COGC - cost of goods sold
-- YTD - Year to Date
-- YTG - Year to Go
-- Direct
-- Retailer
-- Distributors
-- Consumer
+- Net Profit
+- Forecast Accuracy
+- Revenue Growth
+- Customer Performance
+- Product Performance
+- Market Performance
+- Inventory Analysis
 
-## Company’s back ground
+---
 
-AltiQ hardware is a company which has grown vastly in the recent years, and opened business all over the globe. It is a company which sells, computer and computer accessories through three mediums/channel
+# 📚 Technical Skills Applied
 
-- Retailers
-- Direct
-- Distributors
+- Data Cleaning
+- Data Transformation
+- Data Modeling
+- Snowflake Schema
+- DAX Measures
+- Calculated Columns
+- KPI Cards
+- Dynamic Titles
+- Bookmarks
+- Drill-through
+- Page Navigation
+- Slicers
+- Conditional Formatting
+- Power Query
 
-Recently the company has faced a unforeseen loss by opening store in America based on the surveys, intuition and some excel analysis and also the company’s competitors has handful of analytics team to perform analysis and make data driven decision. So, the AltiQ hardware has no other option other than building their analytics team for data driven insights and decisions in the future to survive better in the industry. 
+---
 
-### Dataset **Understanding.**
+# 💼 Business Problem
 
-Understanding what data is available will be more helpful while doing analysis. before jumping on to the analysis get good understanding of what are data available.
+AtliQ Hardware expanded globally without relying on advanced analytics, leading to poor decision-making and financial losses in certain markets.
 
-Dimension table : It will have the static data like details of customer and products
+This project helps stakeholders answer critical business questions related to:
 
-Fact table : It will have the data about the transactions  
+- Which markets generate the highest revenue?
+- Which products are most profitable?
+- Which customers contribute the most sales?
+- How accurate are sales forecasts?
+- Where can operational costs be reduced?
+- Which regions require strategic attention?
 
-- gdb041:
-    - dim_customer
-        - **27** distinct markets (ex India, USA, spain)
-        - **75** distinct customers thorough out the market
-        - **2** types of platforms
-            - Brick & Motors - Physical/offline store
-            - E-commerce - Online Store (Amazon, flipkart)
-        - Three channels
-            - Retailer
-            - Direct
-            - Distributors
-    - dim_market
-        - **27** distinct markets (ex India, USA, spain)
-        - 7 sub-zones
-        - 4 regions
-            - APAC
-            - EU
-            - nan
-            - LATAM
-    - dim_product
-        - Divisions
-            - P & A
-                - Peripherals
-                - Accessories
-            - PC
-                - Notebook
-                - Desktop
-            - N & S
-                - Networking
-                - Storage
-        - There are 14 different categories, Like Internal HDD, keyboard
-        - There are different variants available for the same product
-    - fact_forecast_monthly
-        - This table is used to forecast the customer’s need in advance, which can help in
-            - Higher customer satisfaction
-            - Reduced cost in warehouses for storage purpose
-        - The table is denormalized by data engineering team, as it is a data warehouse which is aimed to be used for analytical work.
-        - All the date of the month will be replaced by the start date of the month
-        - It will have all the column names and in the end it will have the forecast quantity need of the customer
-    - fact_sales_monthly
-        - This table is more or less is same as fact_forecase_monthly table, but the last column has the value of sold quantity instead of forecast value.
-- gdb056
-    - freight_cost
-        - This table has details of travel cost and other cost for each market with fiscal year
-    - gross_price
-        - Has the details of gross prices with product code
-    - manufacturing_cost
-        - Has the details of manufacturing cost with product code with year
-    - Pre_invoice_dedutions
-        - Has the details of pre invoice deductions percentage for each cutomer with year
-    - Post_invoice_deductions
-        - Post invoice deductions and other deductions details
+---
 
-## Importing data into PowerBi
+# 📊 Business Outcome
 
-- As the database is MySQL in this project, we need to import the datasets from Mysql database to PowerBi by providing the Database access credential
+The dashboard enables management to:
 
-## Data Model
+- Monitor business performance in real time
+- Improve strategic decision-making
+- Identify high-performing products and markets
+- Optimize supply chain operations
+- Track financial health
+- Analyze customer behavior
+- Improve sales forecasting
+- Reduce operational inefficiencies
 
-- Data modeling plays a vital role and is considered as the basement of report. All the visuals will be build upon the data model.
-- Poor data modeling affects the over all performance of the report.
-- Following Good practices of data modeling is must. 
-- In this project, we have followed Snowflake data modeling method.
+---
 
-<img src="Resources/Data_model.png" class="center">
+# 🎯 Skills Demonstrated
 
-### Dashboard designing
+- Business Intelligence
+- Dashboard Design
+- Data Visualization
+- Data Modeling
+- SQL
+- Power Query
+- DAX
+- KPI Analysis
+- Business Analytics
+- Interactive Reporting
 
-Based on the mock ups received as requirement, the team will start designing the visuals and create measure as and when required
+---
 
-## Home view
+# 📁 Project Structure
 
-In Home view, all the views button will be available. User will land on specific view page by clicking the button 
+```
+Business-Insight-360
+│
+├── Resources
+│   ├── Data_model.png
+│   ├── Finance View.png
+│   ├── Home.png
+│   ├── Marketing View.png
+│   ├── Sales View.png
+│   └── Supply Chain View.png
+│
+├── Business Insight 360 Excel File.xlsx
+└── README.md
+```
 
-- Info
-- Finance View
-- Sales View
-- Marketing View
-- Supply chain View
-- Executive View
-- Products
-- Support
+---
 
-## Overall Report
+# 📸 Dashboard Preview
 
-<img src="Resources/Home.png" class="center">
-
-## Finance View
-<img src="Resources/Finance View.png" class="center">
-
-## Sales View
-
-<img src="Resources/Sales View.png" class="center">
-## Marketing View
-
-<img src="Resources/Marketing View.png" class="center">
-
-## Supply chain View
-
-<img src="Resources/Supply Chain View.png" class="center">
+| Dashboard | Description |
+|------------|-------------|
+| Home | Navigation Dashboard |
+| Finance | Financial KPIs |
+| Sales | Customer & Product Analysis |
+| Marketing | Marketing Insights |
+| Supply Chain | Forecast & Inventory Analysis |
 
 
+---
 
-you can find the full report file here : [Report](https://app.powerbi.com/view?r=eyJrIjoiMTQwNWVlNmUtZWY5ZC00Mjc4LWJhMzMtZWZkMzA3OTM0YTY3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=ReportSection0e765c0061580b067c73)
-
-
-## Project Outcome
-
-By using this report, decisions can be taken based on the data. Further it will help in answering n number of why questions based on the situations.
+# ⭐ If you found this project helpful, consider giving it a Star!
